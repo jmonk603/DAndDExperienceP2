@@ -113,7 +113,7 @@ function touchEnded(){
 }
 
 function openLink(){
-  window.location.href = ('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
 }
 
 function rolled(){
