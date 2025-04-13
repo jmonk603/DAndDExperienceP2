@@ -1,4 +1,16 @@
-Pier
 Town
-Forest
-Mountain Peak
+Make your choice
+choice made
+dice roll
+blank
+success
+redirected
+failure
+redirected
+choice made
+dice roll
+blank
+success
+redirected
+failure
+redirected
