@@ -9,11 +9,11 @@ let button
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  bg = loadImage('paperTexture.jpg');
-  sword = loadImage('sword.png');
-  storytext = loadStrings('storyoptions.txt');
-  titletext = loadStrings('Titles.txt');
-  choicestext = loadStrings('multiplechoices.txt');
+  bg = loadImage('js/paperTexture.jpg');
+  sword = loadImage('js/sword.png');
+  storytext = loadStrings('js/storyoptions.txt');
+  titletext = loadStrings('js/Titles.txt');
+  choicestext = loadStrings('js/multiplechoices.txt');
   
   rollchoice = createSelect();
   rollchoice.option("1");
