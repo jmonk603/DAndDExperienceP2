@@ -114,11 +114,11 @@ function touchEnded(){
 
 function openLink(){
   if (storyCounter == 6){
-    window.open("https://jmonk603.github.io/DAndDARWinBar/");
+    window.open("https://jmonk603.github.io/DandDARWinBar/");
     window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
   }
   if (storyCounter == 8){
-    window.open("https://jmonk603.github.io/DAndDARLoseBar/");
+    window.open("https://jmonk603.github.io/DandDARLoseBar/");
     window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
   }
   if (storyCounter == 13){
@@ -126,7 +126,7 @@ function openLink(){
     window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
   }
   if (storyCounter == 15){
-    window.open("https://jmonk603.github.io/DAndDARLoseTalk/");
+    window.open("https://jmonk603.github.io/DandDARLoseTalk/");
     window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
   }
 }
