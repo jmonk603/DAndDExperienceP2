@@ -122,7 +122,7 @@ function openLink(){
     window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
   }
   if (storyCounter == 13){
-    window.open("https://jmonk603.github.io/DAndDARWinTalk/");
+    window.open("https://jmonk603.github.io/DandDARWinTalk/");
     window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
   }
   if (storyCounter == 15){
