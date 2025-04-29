@@ -113,7 +113,22 @@ function touchEnded(){
 }
 
 function openLink(){
-  window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
+  if (storyCounter == 6){
+    window.open("https://jmonk603.github.io/DAndDARWinBar/");
+    window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
+  }
+  if (storyCounter == 8){
+    window.open("https://jmonk603.github.io/DAndDARLoseBar/");
+    window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
+  }
+  if (storyCounter == 13){
+    window.open("https://jmonk603.github.io/DAndDARWinTalk/");
+    window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
+  }
+  if (storyCounter == 15){
+    window.open("https://jmonk603.github.io/DAndDARLoseTalk/");
+    window.location.href = ('https://jmonk603.github.io/DAndDExperienceP3/');
+  }
 }
 
 function rolled(){
