@@ -2,6 +2,8 @@ var bg;
 var title = "a much longer title for test purposes"
 var storyCounter = 0;
 var sword
+var cor1
+var cor2
 
 let clickoff = false;
 let rollchoice
@@ -14,6 +16,8 @@ function setup() {
   storytext = loadStrings('js/storyoptions.txt');
   titletext = loadStrings('js/Titles.txt');
   choicestext = loadStrings('js/multiplechoices.txt');
+  cor1 = loadImage('corner1.png');
+  cor2 = loadImage('corner2.png');
   
   rollchoice = createSelect();
   rollchoice.option("1");
@@ -41,6 +45,8 @@ function setup() {
 
 function draw() {
   background(bg);
+  image(cor1,-3,250,250,350)
+  image(cor2,windowWidth-240,-15,250,350)
   
   if(storyCounter == 3 || storyCounter == 10){
     rollchoice.position((windowWidth/2)-15,200)
@@ -60,8 +66,25 @@ function draw() {
   let choice2 = choicestext[(storyCounter)+1];
   
   let phrases = split(phrase, "...")
-  if (phrases[1] == " "){
-    phrases[1] = " ";
+  if (phrases.length < 5){
+    if (phrases.length == 4){
+      phrases[4] = " ";
+    }
+    if (phrases.length == 3){
+      phrases[4] = " ";
+      phrases[3] = " ";
+    }
+    if (phrases.length == 2){
+      phrases[4] = " ";
+      phrases[3] = " ";
+      phrases[2] = " ";
+    }
+    if (phrases.length == 1){
+      phrases[4] = " ";
+      phrases[3] = " ";
+      phrases[2] = " ";
+      phrases[1] = " ";
+    }
   }
   //works same as instagram stories where you go to different slides and choose your own adventure books
   
@@ -72,13 +95,13 @@ function draw() {
   
   textSize(20)
   textFont('Arial');
-  text((phrases[0]+'\n'+phrases[1]), windowWidth/2, 180)
+  text((phrases[0]+'\n'+phrases[1]+'\n'+phrases[2]+'\n'+phrases[3]+'\n'+phrases[4]), windowWidth/2, 130)
   
   if (storyCounter == 1){
     text(choice1,windowWidth/4,400);
     text(choice2,(windowWidth/4)+(windowWidth/2),400);
     
-    image(sword,(windowWidth/2)-190,250,350,350)
+    image(sword,(windowWidth/2)-135,250,250,350)
   }
   
 }
